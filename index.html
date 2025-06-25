@@ -1,49 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kelsey's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelsey Semien | Portfolio</title>
+
+  <!-- Fonts + AOS + CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-   <img src="Profile.JPG" alt="Kelsey Semien" class="profile-pic"> <h1>Kelsey Semien</h1>
-    <p>Software Developer | Master's in Software Development</p>
+    <img src="Profile.JPG" alt="Kelsey Semien" class="profile-pic" />
+    <h1>Kelsey Semien</h1>
+    <p>Software Developer | M.S. in Software Development</p>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I'm a passionate software developer with a Master of Science in Software Development from Southern New Hampshire University, where I honed my skills in full-stack development, project management, and modern software architecture. Currently, I’m expanding my expertise through a Master’s program in Artificial Intelligence and Machine Learning at CSU Global. My academic journey reflects a deep commitment to building innovative, ethical, and impactful technology solutions that serve real-world needs.</p>
+    <p>
+      I'm a passionate software developer with a Master of Science in Software Development and currently pursuing a Master’s in AI/ML. I build intuitive, scalable solutions using Python, Java, HTML/CSS, and React.
+    </p>
   </section>
 
-  <section id="skills">
+  <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
     <ul>
       <li>Python</li>
       <li>Java</li>
       <li>HTML & CSS</li>
-      <li>React (learning)</li>
+      <li>React</li>
+      <li>REST APIs</li>
+      <li>Git & GitHub</li>
     </ul>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      
+    <h2 data-aos="fade-up">Projects</h2>
+
+    <div class="filter-buttons" data-aos="fade-up">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="web">Web Apps</button>
+      <button class="filter-btn" data-category="python">Python</button>
+      <button class="filter-btn" data-category="java">Java</button>
+    </div>
+
+    <ul class="project-list">
+      <li class="project-item" data-category="web" data-aos="fade-up">
+        <strong>JobQuest</strong> – Track job applications and notes.<br/>
+        🔗 <a href="https://github.com/KelseySemien/JobQuest" target="_blank">View on GitHub</a>
+      </li>
+      <li class="project-item" data-category="python" data-aos="fade-up">
+        <strong>Numbers Game</strong> – Python number guessing CLI.<br/>
+        🔗 <a href="https://github.com/KelseySemien/Numbers-Game" target="_blank">View on GitHub</a>
+      </li>
+      <li class="project-item" data-category="web" data-aos="fade-up">
+        <strong>Flashcards</strong> – Virtual flashcard memory app.<br/>
+        🔗 <a href="https://github.com/KelseySemien/flashcards" target="_blank">View on GitHub</a>
+      </li>
+      <li class="project-item" data-category="java" data-aos="fade-up">
+        <strong>To-Do List</strong> – Java task management app.<br/>
+        🔗 <a href="https://github.com/KelseySemien/To-Do-List" target="_blank">View on GitHub</a>
+      </li>
     </ul>
   </section>
 
-  
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: ksemien8@gmail.com</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/kelseysemien" target="_blank">
-      linkedin.com/in/kelseysemien
-  <p><a href="Kelsey_Semien_Resume.pdf" download>📄 Download My Resume (PDF)</a></p>
-</section>
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ksemien8@gmail.com">ksemien8@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/kelseysemien" target="_blank">linkedin.com/in/kelseysemien</a></p>
+    <p>GitHub: <a href="https://github.com/KelseySemien" target="_blank">github.com/KelseySemien</a></p>
+    <p><a href="ksemienRes.pdf" download>📄 Download Resume (PDF)</a></p>
+  </section>
 
+  <footer>
+    <p>© 2025 Kelsey Semien. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
